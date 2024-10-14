@@ -5,7 +5,7 @@ cmd({
     pattern: "menu",
     desc: "get cmd list",
     category: "main",
-    react: "📑",
+    react: "💫",
     filename: __filename
 },
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
@@ -25,17 +25,34 @@ if (commands[i].pattern && !commands[i].dontAddCommandList) {
 menu[commands[i].category] += `${config.PREFIX}${commands[i].pattern}\n`;
  }
 }
-let madeMenu = ` ╔═════════════════════════◊
-PLEASE REPLY TO NUMBER ⌨️ 
-0️⃣1️⃣ 'DOWNLODE MENU'
-0️⃣2️⃣ 'GROUP MENU'
-0️⃣3️⃣ 'OWNER MENU 
-0️⃣4️⃣ 'SEARCH MENU' 
-0️⃣5️⃣ 'MAIN MENU'     
+╔═════════════════════════◊
+let madeMenu = `📌️ `🇼 🇪 🇱 🇨 🇴 🇲 🇪 🤖`
 
-TYPE NUMBER GET MENU 
-EX :  .01 
-MENU  
+`ＤＡＲＫ Ｘ ＭＤ` 🚀
+
+> 🚀 `ＲＵＮＴＩＭＥ` : ${uptime}
+> 🚀 `ＭＯＤＥ` : ${mode} 
+> 🚀 `ＲＡＭ` : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
+> 🚀 `ＰＲＥＦＩＸ` ${s.PREFIXE}
+
+> `ＴＹＰＥ ＮＵＭＢＥＲ ＧＥＴ ＭＥＮＵ 🔢`
+
+> `Ｆｏｌｌｏｗ ｔｈｅｓｅ ｓｔｅｐｓ`
+
+`ＥＸＡＭＰＬＥ`
+
+> `ＧＥＴ ＭＡＩＮ ＭＥＮＵ ＴＹＰＥ`
+ 
+*🔢  .０１*
+
+`🥷 01. ＭＡＩＮ ＭＥＮＵ`
+`🥷 02. ＤＯＷＮＬＯＡＤ ＭＥＮＵ`
+`🥷 03. ＯＷＮＥＲ ＭＥＮＵ`
+`🥷 04. ＧＲＯＵＰ ＭＥＮＵ`
+`🥷 05. ＳＥＲＡＣＨ ＭＥＮＵ`
+
+
+> `📌️ ʙᴏᴛ ᴄʀᴇᴀᴛᴇᴅ ʙY ᴅᴀʀᴋ x ᴛᴇᴀᴍ` 👤
 `
     
 await conn.sendMessage(from,{image:{url:config.ALIVE_IMG},caption:madeMenu},{quoted:mek})
